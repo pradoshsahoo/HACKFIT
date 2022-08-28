@@ -42,7 +42,7 @@ const info = new Schema(
   },
   { timestamps: true }
 );
-const thoughtSchema = new Schema(
+const userSchema = new Schema(
   {
     userName: {
       type: String,
@@ -66,4 +66,4 @@ const thoughtSchema = new Schema(
   { timestamps: true }
 );
 
-exports.Thought = mongoose.model("thought", thoughtSchema);
+exports.UserInfo = mongoose.model("user", userSchema);
